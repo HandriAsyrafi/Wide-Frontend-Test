@@ -1,0 +1,42 @@
+React.js Technical Test
+ 
+Task 1: Component Creation and State Management
+ 
+Create a React component called Counter that displays a number and two buttons - "Increment" and "Decrement".
+Implement the functionality so that clicking "Increment" increases the displayed number, and clicking "Decrement" decreases it.
+Ensure that the number cannot go below zero.
+ 
+Task 2: Form Handling and Validation
+ 
+Create a form with the following fields:
+1. Name (text input)
+2. Email (email input)
+3. Password (password input)
+4. Confirm Password (password input)
+ 
+Implement the following validations:
+1. Name should not be empty.
+2. Email should be a valid email address.
+3. Password should be at least 8 characters long.
+4. Confirm Password should match the Password field.
+ 
+Task 3: API Integration
+ 
+Fetch data from the following API endpoint: https://jsonplaceholder.typicode.com/todos/1.
+Display the fetched data in a React component, showing at least the title of the todo item.
+ 
+Task 4: Routing
+ 
+Create a multi-page React application with two routes:
+1. Home page
+2. About page
+3. Add navigation links to switch between the Home and About pages.
+ 
+Task 5: Bonus (Optional)
+ 
+Optional - Ensure the layout of your code responds to the width of the screen (e.g. desktop width to mobile screen width), design will be of your own choice of arrangement and a brief description of why
+ 
+Create a public GitHub repository for your solution.
+Include a README file with instructions on how to run the application.
+Make sure your code is well-organized and includes comments where necessary.
+Submit the GitHub repository link.
