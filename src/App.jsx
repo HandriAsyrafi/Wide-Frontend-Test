@@ -15,17 +15,13 @@ export default function App() {
 
   return (
     <>
-      <div className="flex flex-col items-center gap-4">
-        <div>
-          <Navbar />
+      <Navbar />
+      <div className="flex flex-col justify-center gap-4 w-full mx-auto sm:flex-row ">
+        <div className="flex flex-row gap-4 justify-center sm:flex-col sm:w-auto sm:justify-start">
+          <Counter />
+          <Todos />
         </div>
-        <div className="flex gap-4 justify-center">
-          <div className="flex flex-col gap-4">
-            <Counter />
-            <Todos />
-          </div>
-          <Form onRegister={handleRegister} users={users} />
-        </div>
+        <Form onRegister={handleRegister} users={users} />
       </div>
     </>
   );

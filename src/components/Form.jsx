@@ -22,6 +22,7 @@ export function Form({ onRegister }) {
       return;
     }
 
+    // Email validation using Regex
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const isValidEmail = emailRegex.test(email);
 
@@ -58,7 +59,7 @@ export function Form({ onRegister }) {
   }
 
   return (
-    <div className="border-gray-300 border-2 p-5 rounded-xl shadow-xl w-120">
+    <div className="border-gray-300 border-2 p-5 rounded-xl shadow-xl mx-auto w-105 sm:w-120 sm:mx-0">
       <h1 className="flex justify-center text-xl font-bold mb-4">Form</h1>
       {error && <Error errorMessage={error} />}
       {success && <Success successMessage={success} />}
@@ -119,7 +120,7 @@ export function Form({ onRegister }) {
           type="submit"
           className="justify-center mx-auto w-full bg-blue-300 my-2 py-2 rounded-xl hover:bg-blue-400 cursor-pointer "
         >
-          REGISTER
+          Register
         </button>
       </form>
     </div>

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 export function Todos() {
   const [todos, setTodos] = useState([]);
 
+  // Fetch data
   useEffect(() => {
     async function fetchData() {
       const res = await fetch("https://jsonplaceholder.typicode.com/todos/1");
@@ -35,7 +36,7 @@ function TodoList({ todos }) {
   return (
     <>
       <div>
-        <h1 className="flex justify-center font-semibold mb-2">
+        <h1 className="flex justify-center font-semibold mb-4">
           {update.title}
         </h1>
         {update.completed ? (
