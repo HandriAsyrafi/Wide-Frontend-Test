@@ -4,12 +4,12 @@ export function Counter() {
   const [count, setCount] = useState(0);
 
   function handleIncrement() {
-    setCount(() => count + 1);
+    setCount(count + 1);
   }
 
   // handle decrement that cant be below 0
   function handleDecrement() {
-    count > 0 && setCount(() => count - 1);
+    count > 0 && setCount(count - 1);
   }
 
   return (
